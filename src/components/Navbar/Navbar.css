@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #292e2b;
+    --secondary-color: #b4b4b4;
+    --accent-color: #4ead0e;
+    --text-primary-color: #b4b4b4;
+    --text-accent-color: #4ead0e;
+  }
+
+.navbar {
+    border: 1px solid black;
+    height: 100px;
+
+}
+
+.navbar__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
