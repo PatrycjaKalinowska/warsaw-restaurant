@@ -28,5 +28,70 @@
     font-size: 45px;
     text-transform: uppercase;
     font-weight: 600;
+    margin-bottom: 7px;
   }
 
+  .header__socials-icon {
+    cursor: pointer;
+    color: var(--text-secondary-color);
+    font-size: 20px;
+    position: absolute;
+    bottom: 30px;
+  }
+
+  .header__socials-icon:hover {
+    font-size: 25px;
+    transition: 0.3s;
+  }
+
+  .icon-fb {
+    left: 50px;
+  }
+
+  .icon-insta {
+    left: 100px;
+  }
+
+  .icon-tt {
+    left: 150px;
+  }
+
+  @media screen and (max-width: 560px) {
+    .header__title {
+      font-size: 35px;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    .header__title {
+      font-size: 30px;
+    }
+    
+  }
+
+  @media screen and (max-width: 400px) {
+    .header__title-container {
+        left: 30px;
+    }
+    .icon-fb {
+      left: 30px;
+    }
+    .icon-insta {
+      left: 80px;
+    }
+    .icon-tt {
+      left: 130px;
+    }
+  }
+
+  @media screen and (max-width: 385px) {
+    .header__title-container {
+      width: 300px;
+      top: 40vh;
+    }
+    .header__title {
+      margin-bottom: 0;
+    }
+
+
+  }

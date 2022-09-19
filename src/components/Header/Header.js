@@ -1,6 +1,7 @@
 import React from "react";
 import './Header.css';
 import banner from '../../assets/banner.png';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Header = () => {
 
@@ -9,6 +10,10 @@ const Header = () => {
             <p className="header__title">Good food</p>
             <p className="header__title">for good people</p>
         </div>
+            <FaFacebook className="header__socials-icon icon-fb" />
+            <FaInstagram className="header__socials-icon icon-insta"/>
+            <FaTwitter className="header__socials-icon icon-tt"/>
+
         <img className="header__banner-img" src={banner} alt="banner"/>
     </div>
 }
