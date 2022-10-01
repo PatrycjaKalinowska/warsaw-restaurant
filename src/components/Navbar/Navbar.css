@@ -103,7 +103,8 @@
 }
 
 .navbar__menu-hamburger-item a:hover {
-    text-shadow: 0 0 10px var(--text-secondary-color);
+    color: var(--text-accent-color);
+    text-shadow: 0 0 20px var(--text-accent-color);
     transition: 0.3s;
 }
 

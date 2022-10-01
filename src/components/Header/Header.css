@@ -93,5 +93,29 @@
       margin-bottom: 0;
     }
 
+   
+  }
 
+  @media screen and (max-width: 330px) {
+    .header {
+      width: 100%;
+      padding: 0;
+    }
+    .header__banner-img {
+      width: 100vw;
+      height: 100%;
+      margin: 0;
+    }
+    .header__title-container {
+      width: 200px;
+    }
+    .header__title {
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (max-width: 280px) {
+    .header__title-container {
+      width: 150px;
+    }  
   }

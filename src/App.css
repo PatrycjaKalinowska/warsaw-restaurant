@@ -10,3 +10,8 @@
     --text-accent-color: #65e013;
     --text-accent-color-bright: #ffffff;
   }
+
+  .app__container {
+    width: 100vw;
+    height: 100vh;
+  }
