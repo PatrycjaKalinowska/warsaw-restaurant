@@ -40,8 +40,9 @@
   }
 
   .header__socials-icon:hover {
-    font-size: 25px;
-    transition: 0.3s;
+    color: var(--accent-color);
+    filter: drop-shadow(0 0 10px var(--accent-color));
+    transition: 0.5s;
   }
 
   .icon-fb {

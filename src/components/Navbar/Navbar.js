@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { forwardRef, useState } from "react";
 import './Navbar.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaTimes } from 'react-icons/fa';
@@ -22,7 +22,7 @@ const Navbar = () => {
                     {toggleMenu && (<div className="navbar__menu-hamburger-overlay">
                     <FaTimes className="navbar__menu-hamburger-overlay-close" color="#cfcdcd" font-size={25} onClick={() => {setToggleMenu(false)}}/>
                     <ul className="navbar__menu-hamburger-list">
-                        <li className="navbar__menu-hamburger-item"><a href="#">About Us</a></li>
+                        <li className="navbar__menu-hamburger-item"><a href="#aboutUs">About Us</a></li>
                         <li className="navbar__menu-hamburger-item"><a href="#">Menu</a></li>
                         <li className="navbar__menu-hamburger-item"><a href="#">Chef</a></li>
                         <li className="navbar__menu-hamburger-item"><a href="#">Gallery</a></li>
