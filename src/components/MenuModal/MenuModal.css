@@ -1,0 +1,9 @@
+.menu-modal__container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.menu-modal__item {
+    color: var(--text-primary-color);
+}
