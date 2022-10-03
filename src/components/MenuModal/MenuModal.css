@@ -51,3 +51,12 @@
     filter: drop-shadow(0 0 10px var(--accent-color));
     transition: 0.5s;
 }
+
+@media screen and (max-width: 450px) {
+    .menu-modal__header {
+        font-size: 20px;
+    }
+    .menu-modal__item span {
+        font-size: 12px
+    }
+}
