@@ -33,7 +33,7 @@ const salad = [
         price: '20 PLN'
     },
     {
-        title: 'Salad with feta and sun-dried tomatoes',
+        title: 'Salad with feta and tomatoes',
         price: '20 PLN'
     },
     {

@@ -5,22 +5,36 @@ import { useState } from 'react';
 
 const Menu = () => {
     const [mealsList, setMealsList] = useState([]);
+    const [mealsListName, setMealsListName] = useState("");
+    const [displayMenu, setDisplayMenu] = useState(false);
 
     const handleMenuClick = (e) => {
         setMealsList([]);
 
         if (e.target.className.includes("1")) {
             setMealsList([menuList.breakfast]);
+            setMealsListName('Breakfast:');
+            setDisplayMenu(true);
         } else if (e.target.className.includes("2")) {
             setMealsList([menuList.salad]);
+            setMealsListName('Salads:');
+            setDisplayMenu(true);
         } else if (e.target.className.includes("3")) {
             setMealsList([menuList.soup]);
+            setMealsListName('Soups:');
+            setDisplayMenu(true);
         } else if (e.target.className.includes("4")) {
             setMealsList([menuList.mainCourse]);
+            setMealsListName('Main Courses:');
+            setDisplayMenu(true);
         } else if (e.target.className.includes("5")) {
             setMealsList([menuList.dessert]);
+            setMealsListName('Desserts:');
+            setDisplayMenu(true);
         } else if (e.target.className.includes("6")) {
             setMealsList([menuList.drinks]);
+            setMealsListName('Drinks:');
+            setDisplayMenu(true);
         }
     }
     return <div className='menu'>
@@ -44,7 +58,7 @@ const Menu = () => {
                 <p className='item-6' onClick={handleMenuClick} >Drinks</p>
             </div>
         </div>
-        <MenuModal mealsList={mealsList}/>
+        {displayMenu ? <MenuModal mealsList={mealsList} mealsListName={mealsListName} setDisplayMenu={setDisplayMenu}/> : ''}
     </div>
 }
 

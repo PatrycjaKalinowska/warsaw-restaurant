@@ -17,10 +17,10 @@ const Navbar = () => {
                     <li className="navbar__menu-item"><a href="#">Find Us</a></li>
                 </ul>
                 <div className="navbar__menu-hamburger">
-                    <GiHamburgerMenu color="#cfcdcd" fontSize={25} onClick={() => {setToggleMenu(true)}}/>
+                    <GiHamburgerMenu className="navbar__menu-hamburger__icon" onClick={() => {setToggleMenu(true)}}/>
 
                     {toggleMenu && (<div className="navbar__menu-hamburger-overlay">
-                    <FaTimes className="navbar__menu-hamburger-overlay-close" color="#cfcdcd" font-size={25} onClick={() => {setToggleMenu(false)}}/>
+                    <FaTimes className="navbar__menu-hamburger-overlay-close" onClick={() => {setToggleMenu(false)}}/>
                     <ul className="navbar__menu-hamburger-list">
                         <li className="navbar__menu-hamburger-item"><a href="#aboutUs">About Us</a></li>
                         <li className="navbar__menu-hamburger-item"><a href="#">Menu</a></li>
