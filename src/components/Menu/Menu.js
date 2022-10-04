@@ -37,7 +37,7 @@ const Menu = () => {
             setDisplayMenu(true);
         }
     }
-    return <div className='menu'>
+    return <div className='menu' id="menu">
         <div className='menu__container'>
             <div className='menu__item menu__item-1' onClick={handleMenuClick}>
                 <p className='item-1' onClick={handleMenuClick} >Breakfast</p>

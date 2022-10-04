@@ -2,16 +2,17 @@ import React, { forwardRef, useState } from "react";
 import './Navbar.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaTimes } from 'react-icons/fa';
+import { Link } from "react-scroll";
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     return <div className="navbar">
-            <div className="navbar__logo"><a className="navbar__logo-link" href="#">Warsaw Restaurant</a></div>
+            <div className="navbar__logo"><Link to="header" spy={true} smooth={true} duration={600} className="navbar__logo-link">Warsaw Restaurant</Link></div>
             <nav className="navbar__nav">
                 <ul className="navbar__menu-list">
-                    <li className="navbar__menu-item"><a href="#">About Us</a></li>
-                    <li className="navbar__menu-item"><a href="#">Menu</a></li>
+                    <li className="navbar__menu-item"><Link to="aboutUs" spy={true} smooth={true} offset={10} duration={600}>About Us</Link></li>
+                    <li className="navbar__menu-item"><Link to="menu" spy={true} smooth={true} offset={10} duration={600}>Menu</Link></li>
                     <li className="navbar__menu-item"><a href="#">Chef</a></li>
                     <li className="navbar__menu-item"><a href="#">Gallery</a></li>
                     <li className="navbar__menu-item"><a href="#">Find Us</a></li>
@@ -23,7 +24,7 @@ const Navbar = () => {
                     <FaTimes className="navbar__menu-hamburger-overlay-close" onClick={() => {setToggleMenu(false)}}/>
                     <ul className="navbar__menu-hamburger-list">
                         <li className="navbar__menu-hamburger-item"><a href="#aboutUs">About Us</a></li>
-                        <li className="navbar__menu-hamburger-item"><a href="#">Menu</a></li>
+                        <li className="navbar__menu-hamburger-item"><a href="#menu">Menu</a></li>
                         <li className="navbar__menu-hamburger-item"><a href="#">Chef</a></li>
                         <li className="navbar__menu-hamburger-item"><a href="#">Gallery</a></li>
                         <li className="navbar__menu-hamburger-item"><a href="#">Find Us</a></li>
