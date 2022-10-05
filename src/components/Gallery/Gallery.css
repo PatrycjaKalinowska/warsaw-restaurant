@@ -1,0 +1,36 @@
+.gallery {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    font-family: 'Montserrat', sans-serif;
+    padding: 120px 50px 100px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.gallery__header {
+    margin-bottom: 20px;
+}
+
+.gallery__text-container {
+    max-width: 50%;
+    align-self: center;
+    margin-right: 30px;
+}
+
+.gallery__gallery-container {
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery__gallery-photo {
+    height: 100%;
+    width: 65%;
+    object-fit: cover;
+    margin-right: 10px;
+}

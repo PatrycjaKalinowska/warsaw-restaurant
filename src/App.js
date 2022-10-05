@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import './App.css';
 import AboutUs from './components/AboutUs/AboutUs';
 import Menu from './components/Menu/Menu';
+import Gallery from './components/Gallery/Gallery';
 
 const App = () => { 
 
@@ -11,9 +12,10 @@ const App = () => {
   return (
     <div className='app__container'>
       <Navbar />
-      <Header id="header"/>
+      <Header />
       <AboutUs />
       <Menu />
+      <Gallery />
     </div>
   )
 }

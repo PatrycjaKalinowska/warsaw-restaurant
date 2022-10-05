@@ -13,8 +13,7 @@ const Navbar = () => {
                 <ul className="navbar__menu-list">
                     <li className="navbar__menu-item"><Link to="aboutUs" spy={true} smooth={true} offset={10} duration={600}>About Us</Link></li>
                     <li className="navbar__menu-item"><Link to="menu" spy={true} smooth={true} offset={10} duration={600}>Menu</Link></li>
-                    <li className="navbar__menu-item"><a href="#">Chef</a></li>
-                    <li className="navbar__menu-item"><a href="#">Gallery</a></li>
+                    <li className="navbar__menu-item"><Link to="gallery" spy={true} smooth={true} offset={10} duration={600}>Gallery</Link></li>
                     <li className="navbar__menu-item"><a href="#">Find Us</a></li>
                 </ul>
                 <div className="navbar__menu-hamburger">
@@ -25,8 +24,7 @@ const Navbar = () => {
                     <ul className="navbar__menu-hamburger-list">
                         <li className="navbar__menu-hamburger-item"><a href="#aboutUs">About Us</a></li>
                         <li className="navbar__menu-hamburger-item"><a href="#menu">Menu</a></li>
-                        <li className="navbar__menu-hamburger-item"><a href="#">Chef</a></li>
-                        <li className="navbar__menu-hamburger-item"><a href="#">Gallery</a></li>
+                        <li className="navbar__menu-hamburger-item"><a href="#gallery">Gallery</a></li>
                         <li className="navbar__menu-hamburger-item"><a href="#">Find Us</a></li>
                     </ul>
                 </div>)}
