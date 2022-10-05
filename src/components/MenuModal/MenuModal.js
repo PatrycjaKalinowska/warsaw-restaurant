@@ -13,7 +13,7 @@ const MenuModal = ( { mealsList, mealsListName, setDisplayMenu } ) => {
     <p className='menu-modal__header'>{mealsListName}</p>
     <ul className="menu-modal__list">
     {
-        mealsList.map(item => item.map((item, index) => <li key={index} className="menu-modal__item"><span>{item.title}</span><span>{item.price}</span></li>))
+        mealsList.map(item => item.map((item, index) => <li key={index} className="menu-modal__item"><span className='menu-modal__item-name'>{item.title}</span><span className='menu-modal__item-price'>{item.price}</span></li>))
     }    
     </ul>
     </div>

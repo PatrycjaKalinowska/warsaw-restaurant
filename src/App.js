@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div className='app__container'>
       <Navbar />
-      <Header />
+      <Header id="header"/>
       <AboutUs />
       <Menu />
     </div>

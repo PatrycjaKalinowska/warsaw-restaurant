@@ -5,7 +5,7 @@ import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Header = () => {
 
-    return <div className="header" id="header">
+    return <div className="header">
         <div className="header__title-container">
             <p className="header__title">Good food</p>
             <p className="header__title">for good people</p>

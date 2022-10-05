@@ -38,7 +38,7 @@ const salad = [
     },
     {
         title: 'Fruit salad',
-        price: '18 PLN'
+        price: '20 PLN'
     },
 ]
 
@@ -57,7 +57,7 @@ const soup = [
     },
     {
         title: 'Mushroom soup',
-        price: '12 PLN'
+        price: '20 PLN'
     },
 ]
 
@@ -76,7 +76,7 @@ const mainCourse = [
     },
     {
         title: 'Italian cheese and tomato pizza',
-        price: '12 PLN'
+        price: '20 PLN'
     },
 ]
 
@@ -102,7 +102,7 @@ const dessert = [
 const drinks = [
     {
         title: 'Espresso',
-        price: '10 PLN'
+        price: '13 PLN'
     },
     {
         title: 'Cappuccino',
@@ -122,7 +122,7 @@ const drinks = [
     },
     {
         title: 'Mineral watter',
-        price: '8 PLN'
+        price: '5 PLN'
     },
 
 ]
