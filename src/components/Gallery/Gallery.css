@@ -3,11 +3,10 @@
     height: 100vh;
     background-color: var(--secondary-color);
     font-family: 'Montserrat', sans-serif;
-    padding: 120px 50px 100px 50px;
+    padding: 120px 0 100px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow-x: hidden;
 }
 
 .gallery__header {
@@ -15,22 +14,102 @@
 }
 
 .gallery__text-container {
-    max-width: 50%;
+    max-width: 40%;
     align-self: center;
     margin-right: 30px;
 }
 
 .gallery__gallery-container {
-    max-width: 50%;
+    max-width: 60%;
     height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.gallery__photos-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    scroll-behavior: smooth;
+}
+
+.gallery__photos-container::-webkit-scrollbar {
+    display: none;
 }
 
 .gallery__gallery-photo {
     height: 100%;
-    width: 65%;
+    width: 80%;
     object-fit: cover;
     margin-right: 10px;
+}
+
+.gallery__arrow {
+    color: var(--text-primary-color);
+    font-size: 40px;
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+}
+
+.gallery__arrow-left {
+    left: 5px;
+}
+
+.gallery__arrow-right {
+    right: 5px;
+}
+
+@media screen and (max-width: 650px) {
+    .gallery {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 120px 50px 100px 50px;
+        height: 120vh;
+    }
+
+    .gallery__text-container {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .gallery__gallery-container {
+        max-width: 100%;
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .gallery__gallery-photo {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .gallery {
+        padding: 120px 30px 100px 30px;
+    }
+    
+}
+
+@media screen and (max-width: 385px) {
+    .gallery__header {
+        font-size: 20px;
+    }
+    .gallery__text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .gallery {
+        padding: 120px 20px 100px 20px;
+    }
 }
