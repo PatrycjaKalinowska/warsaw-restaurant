@@ -21,7 +21,7 @@ const breakfast = [
     },
 
 
-]
+];
 
 const salad = [
     {
@@ -40,7 +40,7 @@ const salad = [
         title: 'Fruit salad',
         price: '20 PLN'
     },
-]
+];
 
 const soup = [
     {
@@ -59,7 +59,7 @@ const soup = [
         title: 'Mushroom soup',
         price: '20 PLN'
     },
-]
+];
 
 const mainCourse = [
     {
@@ -78,7 +78,7 @@ const mainCourse = [
         title: 'Italian cheese and tomato pizza',
         price: '20 PLN'
     },
-]
+];
 
 const dessert = [
     {
@@ -97,7 +97,7 @@ const dessert = [
         title: 'Cheesecake',
         price: '16 PLN'
     },
-]
+];
 
 const drinks = [
     {
@@ -125,6 +125,7 @@ const drinks = [
         price: '5 PLN'
     },
 
-]
+];
 
-export default { breakfast, salad, soup, mainCourse, dessert, drinks };
+const menuList = { breakfast, salad, soup, mainCourse, dessert, drinks };
+export default menuList;
