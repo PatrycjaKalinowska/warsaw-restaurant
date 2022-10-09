@@ -1,6 +1,7 @@
 # Warsaw Restaurant
 
 This is a landing page of a fictional restaurant, written in React.
+You can see the live version of the project here -> https://warsaw-restaurant.netlify.app/
 
 Project was set up using create-react-app (https://github.com/facebook/create-react-app).
 
