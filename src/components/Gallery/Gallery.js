@@ -4,11 +4,11 @@ import photo02 from '../../assets/photos/photo02.jpg';
 import photo03 from '../../assets/photos/photo03.jpg';
 import photo04 from '../../assets/photos/photo04.jpg';
 import photo05 from '../../assets/photos/photo05.jpg';
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
 const Gallery = () => {
-    const [photos, setPhotos] = useState([photo01, photo02, photo03, photo04, photo05]);
+    const photos = [photo01, photo02, photo03, photo04, photo05];
     
     const scrollImage = useRef(null);
 
