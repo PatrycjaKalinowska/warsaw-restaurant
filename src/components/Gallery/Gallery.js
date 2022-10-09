@@ -9,6 +9,7 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
 const Gallery = () => {
     const [photos, setPhotos] = useState([photo01, photo02, photo03, photo04, photo05]);
+    
     const scrollImage = useRef(null);
 
     const handleArrowClick = (direction) => {
