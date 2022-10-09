@@ -5,6 +5,7 @@ import './App.css';
 import AboutUs from './components/AboutUs/AboutUs';
 import Menu from './components/Menu/Menu';
 import Gallery from './components/Gallery/Gallery';
+import FindUs from './components/FindUs/FindUs';
 
 const App = () => { 
 
@@ -16,6 +17,7 @@ const App = () => {
       <AboutUs />
       <Menu />
       <Gallery />
+      <FindUs />
     </div>
   )
 }

@@ -14,7 +14,7 @@ const Navbar = () => {
                     <li className="navbar__menu-item"><Link to="aboutUs" spy={true} smooth={true} offset={10} duration={600}>About Us</Link></li>
                     <li className="navbar__menu-item"><Link to="menu" spy={true} smooth={true} offset={10} duration={600}>Menu</Link></li>
                     <li className="navbar__menu-item"><Link to="gallery" spy={true} smooth={true} offset={10} duration={600}>Gallery</Link></li>
-                    <li className="navbar__menu-item"><a href="#">Find Us</a></li>
+                    <li className="navbar__menu-item"><Link to="findUs" spy={true} smooth={true} offset={10} duration={600}>Find Us</Link></li>
                 </ul>
                 <div className="navbar__menu-hamburger">
                     <GiHamburgerMenu className="navbar__menu-hamburger__icon" onClick={() => {setToggleMenu(true)}}/>
@@ -25,7 +25,7 @@ const Navbar = () => {
                         <li className="navbar__menu-hamburger-item"><a href="#aboutUs">About Us</a></li>
                         <li className="navbar__menu-hamburger-item"><a href="#menu">Menu</a></li>
                         <li className="navbar__menu-hamburger-item"><a href="#gallery">Gallery</a></li>
-                        <li className="navbar__menu-hamburger-item"><a href="#">Find Us</a></li>
+                        <li className="navbar__menu-hamburger-item"><a href="#findUs">Find Us</a></li>
                     </ul>
                 </div>)}
                      
