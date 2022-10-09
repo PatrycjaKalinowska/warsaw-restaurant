@@ -1,0 +1,13 @@
+.footer {
+    height: 60px;
+    width: 100vw;
+    padding: 5px 50px;
+    background-color: var(--primary-color);
+    border-top: 1px solid rgba(207, 205, 205, 0.2);
+    color: var(--text-secondary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

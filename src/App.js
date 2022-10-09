@@ -1,11 +1,12 @@
-import React, { createRef, useRef } from 'react'
-import Header from './components/Header/Header';
-import Navbar from './components/Navbar/Navbar';
+import React, { createRef, useRef } from 'react';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import Header from './components/Header/Header';
 import AboutUs from './components/AboutUs/AboutUs';
 import Menu from './components/Menu/Menu';
 import Gallery from './components/Gallery/Gallery';
 import FindUs from './components/FindUs/FindUs';
+import Footer from './components/Footer/Footer';
 
 const App = () => { 
 
@@ -18,6 +19,7 @@ const App = () => {
       <Menu />
       <Gallery />
       <FindUs />
+      <Footer />
     </div>
   )
 }
